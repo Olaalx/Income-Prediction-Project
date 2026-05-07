@@ -59,12 +59,64 @@ Precision
 Recall
 F1-score
 Confusion Matrix
-📊 Results Summary (Example Format)
-Model	Accuracy	F1 Score
-Logistic Regression	85%	0.84
-SVM	87%	0.86
-Decision Tree	83%	0.82
-Random Forest ⭐	89%	0.88
+📊 Results Summary :
+
+===== Logistic Regression =====
+Accuracy: 0.8510076185795036
+              precision    recall  f1-score   support
+
+       False       0.88      0.93      0.91     12430
+        True       0.73      0.59      0.65      3846
+
+    accuracy                           0.85     16276
+   macro avg       0.80      0.76      0.78     16276
+weighted avg       0.84      0.85      0.85     16276
+
+
+===== Logistic Regression Tuning =====
+C = 0.1
+Accuracy: 0.8510690587367904
+------------------------------
+C = 1
+Accuracy: 0.8510076185795036
+------------------------------
+C = 10
+Accuracy: 0.8508847382649299
+------------------------------
+
+===== SVM =====
+Accuracy: 0.8527893831408209
+              precision    recall  f1-score   support
+
+       False       0.88      0.94      0.91     12430
+        True       0.74      0.58      0.65      3846
+
+    accuracy                           0.85     16276
+   macro avg       0.81      0.76      0.78     16276
+weighted avg       0.85      0.85      0.85     16276
+
+
+===== SVM Tuning =====
+C = 0.1, Kernel = linear
+Accuracy: 0.8526665028262472
+----------------------------------------
+C = 0.1, Kernel = rbf
+Accuracy: 0.8429589579749324
+----------------------------------------
+C = 1, Kernel = linear
+Accuracy: 0.8524207421971001
+----------------------------------------
+C = 1, Kernel = rbf
+Accuracy: 0.8527893831408209
+----------------------------------------
+C = 10, Kernel = linear
+Accuracy: 0.8523593020398132
+----------------------------------------
+C = 10, Kernel = rbf
+Accuracy: 0.8497788154337675
+----------------------------------------
+
+
 🔧 Hyperparameter Tuning Analysis
 
 We studied the effect of key hyperparameters:
