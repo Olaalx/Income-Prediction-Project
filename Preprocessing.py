@@ -66,7 +66,14 @@ test_df_final = all_data_encoded.iloc[num_train:, :]
 
 print(train_df_final.columns)
 
-y_train = train_df_final['Income_>50K']
-y_test = test_df_final['Income_>50K']
-x_train = train_df_final.drop(['Income_<=50K', 'Income_>50K'], axis=1)
-x_test = test_df_final.drop(['Income_<=50K', 'Income_>50K'], axis=1)
+y_train = train_df_final['Income _>50K']
+y_test = test_df_final['Income _>50K']
+
+x_train = train_df_final.drop(['Income _<=50K', 'Income _>50K'], axis=1)
+x_test = test_df_final.drop(['Income _<=50K', 'Income _>50K'], axis=1)
+
+x_train.to_csv("data/processed/x_train.csv", index=False)
+x_test.to_csv("data/processed/x_test.csv", index=False)
+
+y_train.to_csv("data/processed/y_train.csv", index=False)
+y_test.to_csv("data/processed/y_test.csv", index=False)
