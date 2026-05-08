@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 
 # Understand Columns
-train_df = pd.read_csv('train_data.csv')
-test_df = pd.read_csv('test_data.csv')
+train_df = pd.read_csv('data/raw/train_data.csv')
+test_df = pd.read_csv('data/raw/test_data.csv')
 
 print(train_df.head())
 print(test_df.head())
